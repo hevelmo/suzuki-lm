@@ -38,31 +38,14 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
         echo "                            <div class=\"financing_elements\">
                                 <div class=\"financing_element a\">
                                     <fieldset>
-                                        <label for=\"suk_agn\" style=\"display: none;\">
-                                            <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Selecciona concesionaria
-                                        </label>
-                                        <div class=\"select\">
-                                            <select id=\"suk_agn\" name=\"agencia\" class=\"validate-required\" data-validation-data=\"required\" style=\"width: 100%;\">
-                                                <option label=\"Selecccionar Concesionaria...\" value=\"\">Selecciona Concesionaria</option>
-                                                <option data-max-id=\"12\" label=\"Suzuki López Mateos\" value=\"Suzuki López Mateos\">Suzuki López Mateos</option>
-                                                <option data-max-id=\"54\" label=\"Suzuki Vallarta\" value=\"Suzuki Vallarta\">Suzuki Vallarta</option>
-                                            </select>
-                                        </div>
-                                        <p class=\"invalid-message\" id=\"error_agencia\">Este campo es obligatorio<span>&nbsp;</span></p>
-                                    </fieldset>
-                                </div>
-                                <div class=\"financing_element b\">
-                                    <fieldset>
                                         <label for=\"suk_date\" style=\"display: none;\">
                                             <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Fecha
                                         </label>
                                         <input type=\"text\" value=\"\" name=\"fecha\" class=\"test_drive_model_date datepicker-here model_date\" id=\"suk_date\" data-position=\"top left\" data-language='es' placeholder=\"Fecha prueba de manejo\" data-validation-data=\"required|date\">
                                         <p class=\"invalid-message\">Este campo es obligatorio<span>&nbsp;</span></p>
-                                    </fieldset>
+                                    </fieldset>                                    
                                 </div>
-                            </div>
-                            <div class=\"financing_elements\">
-                                <div class=\"financing_element a\">
+                                <div class=\"financing_element b\">
                                     <fieldset>
                                         <label for=\"suk_name\" style=\"display: none;\">
                                             <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Nombre
@@ -71,7 +54,9 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
                                         <p class=\"invalid-message\" id=\"error_name\">Este campo es obligatorio<span>&nbsp;</span></p>
                                     </fieldset>
                                 </div>
-                                <div class=\"financing_element b\">
+                            </div>
+                            <div class=\"financing_elements\">
+                                <div class=\"financing_element a\">
                                     <fieldset>
                                         <label for=\"suk_lastname\" style=\"display: none;\">
                                             <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Apellido
@@ -80,9 +65,7 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
                                         <p class=\"invalid-message\" id=\"error_name\">Este campo es obligatorio<span>&nbsp;</span></p>
                                     </fieldset>
                                 </div>
-                            </div>
-                            <div class=\"financing_elements\">
-                                <div class=\"financing_element a\">
+                                <div class=\"financing_element b\">
                                     <fieldset>
                                         <label for=\"suk_email\" style=\"display: none;\">
                                             <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Correo electrónico
@@ -91,7 +74,9 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
                                         <p class=\"invalid-message\" id=\"error_name\">Este campo es obligatorio<span>&nbsp;</span></p>
                                     </fieldset>
                                 </div>
-                                <div class=\"financing_element b\">
+                            </div>
+                            <div class=\"financing_elements\">
+                                <div class=\"financing_element a\">
                                     <fieldset>
                                         <label for=\"suk_phone\" style=\"display: none;\">
                                             <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Número de celular
@@ -99,6 +84,8 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
                                         <input type=\"text\" id=\"suk_phone\" name=\"telefono\" class=\"validate-required\" placeholder=\"Número de celular\" data-validation-data=\"required|phone\">
                                         <p class=\"invalid-message\" id=\"error_phone\">Este campo es obligatorio<span>&nbsp;</span></p>
                                     </fieldset>
+                                </div>
+                                <div class=\"financing_element b\">
                                 </div>
                             </div>
                             <div class=\"financing_elements\">
@@ -116,26 +103,30 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
                                 <div class=\"financing_element b\">
                                     <fieldset id=\"fields_hidden\">
                                         <input type=\"hidden\" name=\"producto\" id=\"suk_producto\" value=\"Prueba de manejo - ";
-        // line 98
+        // line 85
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "name", array()), "html", null, true);
         echo "\">
                                         <input type=\"hidden\" name=\"modelo\" id=\"suk_modelo\" value=\"";
-        // line 99
+        // line 86
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "name", array()), "html", null, true);
         echo "\">
                                         <input type=\"hidden\" name=\"concesionaria\" id=\"suk_concesionaria\" value=\"Suzuki Autos ";
-        // line 100
+        // line 87
         echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
         echo "\">
                                         <input type=\"hidden\" name=\"imagen\" id=\"suk_imagen\" value=\"";
-        // line 101
+        // line 88
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
         echo "\">
                                         <input type=\"hidden\" name=\"news\" id=\"suk_news\" value=\"0\">
                                         <input type=\"hidden\" name=\"campaign\" id=\"suk_campaign\" value=\"Suzuki Autos ";
-        // line 103
+        // line 90
         echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
         echo " - Prueba de Manejo\">
+                                        <input type=\"hidden\" id=\"suk_agn\" name=\"agencia\" value=\"Suzuki Autos ";
+        // line 91
+        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
+        echo "\">
                                     </fieldset>
                                 </div>
                             </div>
@@ -163,7 +154,7 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
                                 <fieldset>
                                     <p>
                                         Tus datos están a salvo.<br>Para mayor información revisa nuestro <a href=\"";
-        // line 130
+        // line 118
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "aviso-de-privacidad\" id=\"go-privacy-notice\">Aviso de Privacidad</a>
                                     </p>
@@ -191,7 +182,7 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
 
     public function getDebugInfo()
     {
-        return array (  167 => 130,  137 => 103,  132 => 101,  128 => 100,  124 => 99,  120 => 98,  38 => 18,  21 => 2,  19 => 1,);
+        return array (  158 => 118,  128 => 91,  124 => 90,  119 => 88,  115 => 87,  111 => 86,  107 => 85,  38 => 18,  21 => 2,  19 => 1,);
     }
 }
 /* {% set model = mdopa %}*/
@@ -214,31 +205,14 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
 /*                             <div class="financing_elements">*/
 /*                                 <div class="financing_element a">*/
 /*                                     <fieldset>*/
-/*                                         <label for="suk_agn" style="display: none;">*/
-/*                                             <span style="color: red;" class="fa fa-asterisk"></span> Selecciona concesionaria*/
-/*                                         </label>*/
-/*                                         <div class="select">*/
-/*                                             <select id="suk_agn" name="agencia" class="validate-required" data-validation-data="required" style="width: 100%;">*/
-/*                                                 <option label="Selecccionar Concesionaria..." value="">Selecciona Concesionaria</option>*/
-/*                                                 <option data-max-id="12" label="Suzuki López Mateos" value="Suzuki López Mateos">Suzuki López Mateos</option>*/
-/*                                                 <option data-max-id="54" label="Suzuki Vallarta" value="Suzuki Vallarta">Suzuki Vallarta</option>*/
-/*                                             </select>*/
-/*                                         </div>*/
-/*                                         <p class="invalid-message" id="error_agencia">Este campo es obligatorio<span>&nbsp;</span></p>*/
-/*                                     </fieldset>*/
-/*                                 </div>*/
-/*                                 <div class="financing_element b">*/
-/*                                     <fieldset>*/
 /*                                         <label for="suk_date" style="display: none;">*/
 /*                                             <span style="color: red;" class="fa fa-asterisk"></span> Fecha*/
 /*                                         </label>*/
 /*                                         <input type="text" value="" name="fecha" class="test_drive_model_date datepicker-here model_date" id="suk_date" data-position="top left" data-language='es' placeholder="Fecha prueba de manejo" data-validation-data="required|date">*/
 /*                                         <p class="invalid-message">Este campo es obligatorio<span>&nbsp;</span></p>*/
-/*                                     </fieldset>*/
+/*                                     </fieldset>                                    */
 /*                                 </div>*/
-/*                             </div>*/
-/*                             <div class="financing_elements">*/
-/*                                 <div class="financing_element a">*/
+/*                                 <div class="financing_element b">*/
 /*                                     <fieldset>*/
 /*                                         <label for="suk_name" style="display: none;">*/
 /*                                             <span style="color: red;" class="fa fa-asterisk"></span> Nombre*/
@@ -247,7 +221,9 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
 /*                                         <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>*/
 /*                                     </fieldset>*/
 /*                                 </div>*/
-/*                                 <div class="financing_element b">*/
+/*                             </div>*/
+/*                             <div class="financing_elements">*/
+/*                                 <div class="financing_element a">*/
 /*                                     <fieldset>*/
 /*                                         <label for="suk_lastname" style="display: none;">*/
 /*                                             <span style="color: red;" class="fa fa-asterisk"></span> Apellido*/
@@ -256,9 +232,7 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
 /*                                         <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>*/
 /*                                     </fieldset>*/
 /*                                 </div>*/
-/*                             </div>*/
-/*                             <div class="financing_elements">*/
-/*                                 <div class="financing_element a">*/
+/*                                 <div class="financing_element b">*/
 /*                                     <fieldset>*/
 /*                                         <label for="suk_email" style="display: none;">*/
 /*                                             <span style="color: red;" class="fa fa-asterisk"></span> Correo electrónico*/
@@ -267,7 +241,9 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
 /*                                         <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>*/
 /*                                     </fieldset>*/
 /*                                 </div>*/
-/*                                 <div class="financing_element b">*/
+/*                             </div>*/
+/*                             <div class="financing_elements">*/
+/*                                 <div class="financing_element a">*/
 /*                                     <fieldset>*/
 /*                                         <label for="suk_phone" style="display: none;">*/
 /*                                             <span style="color: red;" class="fa fa-asterisk"></span> Número de celular*/
@@ -275,6 +251,8 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
 /*                                         <input type="text" id="suk_phone" name="telefono" class="validate-required" placeholder="Número de celular" data-validation-data="required|phone">*/
 /*                                         <p class="invalid-message" id="error_phone">Este campo es obligatorio<span>&nbsp;</span></p>*/
 /*                                     </fieldset>*/
+/*                                 </div>*/
+/*                                 <div class="financing_element b">*/
 /*                                 </div>*/
 /*                             </div>*/
 /*                             <div class="financing_elements">*/
@@ -297,6 +275,7 @@ class __TwigTemplate_b88ad5a93a0f28fa588a142a8b6edfa2b9daf818396b9b0523a6090d213
 /*                                         <input type="hidden" name="imagen" id="suk_imagen" value="{{ model.key }}">*/
 /*                                         <input type="hidden" name="news" id="suk_news" value="0">*/
 /*                                         <input type="hidden" name="campaign" id="suk_campaign" value="Suzuki Autos {{ _loc }} - Prueba de Manejo">*/
+/*                                         <input type="hidden" id="suk_agn" name="agencia" value="Suzuki Autos {{ _loc }}">*/
 /*                                     </fieldset>*/
 /*                                 </div>*/
 /*                             </div>*/

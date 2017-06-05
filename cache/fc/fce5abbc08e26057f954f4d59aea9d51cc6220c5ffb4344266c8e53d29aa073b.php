@@ -23,21 +23,6 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
         echo "    <div class=\"financing_elements\">
         <div class=\"financing_element a\">
             <fieldset>
-                <label for=\"suk_agn\" style=\"display: none;\">
-                    <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Selecciona concesionaria
-                </label>
-                <div class=\"select\">
-                    <select id=\"suk_agn\" name=\"agencia\" class=\"validate-required\" data-validation-data=\"required|free\" style=\"width: 100%;\">
-                        <option label=\"Selecccionar Concesionaria...\" value=\"\">Selecciona Concesionaria</option>
-                        <option data-max-id=\"12\" label=\"Suzuki López Mateos\" value=\"Suzuki López Mateos\">Suzuki López Mateos</option>
-                        <option data-max-id=\"54\" label=\"Suzuki Vallarta\" value=\"Suzuki Vallarta\">Suzuki Vallarta</option>
-                    </select>
-                </div>
-                <p class=\"invalid-message\" id=\"error_agencia\">Este campo es obligatorio<span>&nbsp;</span></p>
-            </fieldset>
-        </div>
-        <div class=\"financing_element b\">
-            <fieldset>
                 <label for=\"suk_name\" style=\"display: none;\">
                     <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Nombre
                 </label>
@@ -45,10 +30,7 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
                 <p class=\"invalid-message\" id=\"error_name\">Este campo es obligatorio<span>&nbsp;</span></p>
             </fieldset>
         </div>
-        <div class=\"clearfix\"></div>
-    </div>
-    <div class=\"financing_elements\">
-        <div class=\"financing_element a\">
+        <div class=\"financing_element b\">
             <fieldset>
                 <label for=\"suk_lastname\" style=\"display: none;\">
                     <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Apellido
@@ -57,7 +39,10 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
                 <p class=\"invalid-message\" id=\"error_name\">Este campo es obligatorio<span>&nbsp;</span></p>
             </fieldset>
         </div>
-        <div class=\"financing_element b\">
+        <div class=\"clearfix\"></div>
+    </div>
+    <div class=\"financing_elements\">
+        <div class=\"financing_element a\">
             <fieldset>
                 <label for=\"suk_email\" style=\"display: none;\">
                     <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Correo electrónico
@@ -66,10 +51,7 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
                 <p class=\"invalid-message\" id=\"error_name\">Este campo es obligatorio<span>&nbsp;</span></p>
             </fieldset>
         </div>
-        <div class=\"clearfix\"></div>
-    </div>
-    <div class=\"financing_elements\">
-        <div class=\"financing_element a\">
+        <div class=\"financing_element b\">
             <fieldset>
                 <label for=\"suk_phone\" style=\"display: none;\">
                     <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Número de celular
@@ -125,26 +107,30 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
         <div class=\"financing_element ab\">
             <fieldset id=\"fields_hidden\">
                 <input type=\"hidden\" name=\"producto\" id=\"suk_producto\" value=\"Financiamiento - ";
-        // line 108
+        // line 90
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "name", array()), "html", null, true);
         echo "\">
                 <input type=\"hidden\" name=\"modelo\" id=\"suk_modelo\" value=\"";
-        // line 109
+        // line 91
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "name", array()), "html", null, true);
         echo "\">
                 <input type=\"hidden\" name=\"concesionaria\" id=\"suk_concesionaria\" value=\"Suzuki Autos ";
-        // line 110
+        // line 92
         echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
         echo "\">
                 <input type=\"hidden\" name=\"imagen\" id=\"suk_imagen\" value=\"";
-        // line 111
+        // line 93
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
         echo "\">
                 <input type=\"hidden\" name=\"news\" id=\"suk_news\" value=\"0\">
                 <input type=\"hidden\" name=\"campaign\" id=\"suk_campaign\" value=\"Suzuki Autos ";
-        // line 113
+        // line 95
         echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
         echo " - Financiamiento\">
+                <input type=\"hidden\" id=\"suk_agn\" name=\"agencia\" value=\"Suzuki Autos ";
+        // line 96
+        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
+        echo "\">
             </fieldset>
         </div>
     </div>
@@ -173,7 +159,7 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
         <fieldset>
             <p>
                 Tus datos están a salvo.<br>Para mayor información revisa nuestro <a href=\"";
-        // line 141
+        // line 124
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "aviso-de-privacidad\" id=\"go-privacy-notice\">Aviso de Privacidad</a>
             </p>
@@ -194,7 +180,7 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
 
     public function getDebugInfo()
     {
-        return array (  177 => 141,  146 => 113,  141 => 111,  137 => 110,  133 => 109,  129 => 108,  23 => 4,  19 => 1,);
+        return array (  163 => 124,  132 => 96,  128 => 95,  123 => 93,  119 => 92,  115 => 91,  111 => 90,  23 => 4,  19 => 1,);
     }
 }
 /* <form id="financing">*/
@@ -203,21 +189,6 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
 /*     <div class="financing_elements">*/
 /*         <div class="financing_element a">*/
 /*             <fieldset>*/
-/*                 <label for="suk_agn" style="display: none;">*/
-/*                     <span style="color: red;" class="fa fa-asterisk"></span> Selecciona concesionaria*/
-/*                 </label>*/
-/*                 <div class="select">*/
-/*                     <select id="suk_agn" name="agencia" class="validate-required" data-validation-data="required|free" style="width: 100%;">*/
-/*                         <option label="Selecccionar Concesionaria..." value="">Selecciona Concesionaria</option>*/
-/*                         <option data-max-id="12" label="Suzuki López Mateos" value="Suzuki López Mateos">Suzuki López Mateos</option>*/
-/*                         <option data-max-id="54" label="Suzuki Vallarta" value="Suzuki Vallarta">Suzuki Vallarta</option>*/
-/*                     </select>*/
-/*                 </div>*/
-/*                 <p class="invalid-message" id="error_agencia">Este campo es obligatorio<span>&nbsp;</span></p>*/
-/*             </fieldset>*/
-/*         </div>*/
-/*         <div class="financing_element b">*/
-/*             <fieldset>*/
 /*                 <label for="suk_name" style="display: none;">*/
 /*                     <span style="color: red;" class="fa fa-asterisk"></span> Nombre*/
 /*                 </label>*/
@@ -225,10 +196,7 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
 /*                 <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>*/
 /*             </fieldset>*/
 /*         </div>*/
-/*         <div class="clearfix"></div>*/
-/*     </div>*/
-/*     <div class="financing_elements">*/
-/*         <div class="financing_element a">*/
+/*         <div class="financing_element b">*/
 /*             <fieldset>*/
 /*                 <label for="suk_lastname" style="display: none;">*/
 /*                     <span style="color: red;" class="fa fa-asterisk"></span> Apellido*/
@@ -237,7 +205,10 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
 /*                 <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>*/
 /*             </fieldset>*/
 /*         </div>*/
-/*         <div class="financing_element b">*/
+/*         <div class="clearfix"></div>*/
+/*     </div>*/
+/*     <div class="financing_elements">*/
+/*         <div class="financing_element a">*/
 /*             <fieldset>*/
 /*                 <label for="suk_email" style="display: none;">*/
 /*                     <span style="color: red;" class="fa fa-asterisk"></span> Correo electrónico*/
@@ -246,10 +217,7 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
 /*                 <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>*/
 /*             </fieldset>*/
 /*         </div>*/
-/*         <div class="clearfix"></div>*/
-/*     </div>*/
-/*     <div class="financing_elements">*/
-/*         <div class="financing_element a">*/
+/*         <div class="financing_element b">*/
 /*             <fieldset>*/
 /*                 <label for="suk_phone" style="display: none;">*/
 /*                     <span style="color: red;" class="fa fa-asterisk"></span> Número de celular*/
@@ -310,6 +278,7 @@ class __TwigTemplate_5adf819629e7ef2735eb6c70fb3027d9ac5dcac36b89753f764d2b882dd
 /*                 <input type="hidden" name="imagen" id="suk_imagen" value="{{ model.key }}">*/
 /*                 <input type="hidden" name="news" id="suk_news" value="0">*/
 /*                 <input type="hidden" name="campaign" id="suk_campaign" value="Suzuki Autos {{ _loc }} - Financiamiento">*/
+/*                 <input type="hidden" id="suk_agn" name="agencia" value="Suzuki Autos {{ _loc }}">*/
 /*             </fieldset>*/
 /*         </div>*/
 /*     </div>*/

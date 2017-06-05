@@ -2794,7 +2794,6 @@
             suk_email = SUK.getValue('#suk_email');
 
             data = $(contactForm.contactForm).serializeFormJSON();
-            testDriveSendPromise = contactForm.sendContacto();
             $news = $('#suk_model_newsletter').val($(this).is(':checked'));
             if ($news.is(':checked')) {
                 newsletter = $news.val('1');

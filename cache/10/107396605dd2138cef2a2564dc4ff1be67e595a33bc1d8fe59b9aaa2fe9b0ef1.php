@@ -174,12 +174,12 @@ class __TwigTemplate_1c4c445d8bd23d73f0b748c7c387e23d41fe06747ac67c5326156d3f4d3
                 <div class=\"footer-title cubic-header\">
                     <a ";
         // line 138
-        echo " style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Av. Vallarta</a>
+        echo " style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Av. López Mateos</a>
                 </div>
                 <div class=\"cubic-body\">
-                    Av. Vallarta No. 5300.<br/>
-                    Col. Jardines Vallarta. Zapopan, Jal.<br/>
-                    Tel. 01(33)3777-1989
+                    Av. López Mateos No. 5654<br/>
+                    Col. Arboledas. Zapopan, Jal.<br/>
+                    Tel. 01(33)3884-8200
                 </div>
                 <div class=\"clearfix\"></div>
             </div>
@@ -187,12 +187,12 @@ class __TwigTemplate_1c4c445d8bd23d73f0b748c7c387e23d41fe06747ac67c5326156d3f4d3
                 <div class=\"footer-title cubic-header\">
                     <a ";
         // line 149
-        echo " style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Av. López Mateos</a>
+        echo " style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Av. Vallarta</a>
                 </div>
                 <div class=\"cubic-body\">
-                    Av. López Mateos No. 5654<br/>
-                    Col. Arboledas. Zapopan, Jal.<br/>
-                    Tel. 01(33)3884-8200
+                    Av. Vallarta No. 5300.<br/>
+                    Col. Jardines Vallarta. Zapopan, Jal.<br/>
+                    Tel. 01(33)3777-1989
                 </div>
                 <div class=\"clearfix\"></div>
             </div>
@@ -417,23 +417,23 @@ class __TwigTemplate_1c4c445d8bd23d73f0b748c7c387e23d41fe06747ac67c5326156d3f4d3
 /*         <div class="footer-row first row-1">*/
 /*             <div class="footer-column column-a cubic">*/
 /*                 <div class="footer-title cubic-header">*/
-/*                     <a {#href="http://www.suzukivallarta.com.mx" target="_blank"#} style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Av. Vallarta</a>*/
-/*                 </div>*/
-/*                 <div class="cubic-body">*/
-/*                     Av. Vallarta No. 5300.<br/>*/
-/*                     Col. Jardines Vallarta. Zapopan, Jal.<br/>*/
-/*                     Tel. 01(33)3777-1989*/
-/*                 </div>*/
-/*                 <div class="clearfix"></div>*/
-/*             </div>*/
-/*             <div class="footer-column column-a cubic">*/
-/*                 <div class="footer-title cubic-header">*/
 /*                     <a {#href="http://www.suzuki-lm.com.mx" target="_blank"#} style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Av. López Mateos</a>*/
 /*                 </div>*/
 /*                 <div class="cubic-body">*/
 /*                     Av. López Mateos No. 5654<br/>*/
 /*                     Col. Arboledas. Zapopan, Jal.<br/>*/
 /*                     Tel. 01(33)3884-8200*/
+/*                 </div>*/
+/*                 <div class="clearfix"></div>*/
+/*             </div>*/
+/*             <div class="footer-column column-a cubic">*/
+/*                 <div class="footer-title cubic-header">*/
+/*                     <a {#href="http://www.suzukivallarta.com.mx" target="_blank"#} style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Av. Vallarta</a>*/
+/*                 </div>*/
+/*                 <div class="cubic-body">*/
+/*                     Av. Vallarta No. 5300.<br/>*/
+/*                     Col. Jardines Vallarta. Zapopan, Jal.<br/>*/
+/*                     Tel. 01(33)3777-1989*/
 /*                 </div>*/
 /*                 <div class="clearfix"></div>*/
 /*             </div>*/
