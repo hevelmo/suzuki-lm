@@ -95,10 +95,10 @@
      *  @retun  {Object}    Returns an object whit: "valid": boolean and "message": string
      *
     **/
-        function validate(value, rules, required, custom_message) {
+        function validate(value, rules, required, custom_message, formulario, archivo) {
             var r, null_value, ii, rule;
             r = { valid: false, message: '' };
-            null_value = value == undefined || value === '';
+            null_value = value == undefined || value === '' || value === $("#user_profile_pic").val(), ii, rule;
             required = required === true ? true : false;
 
             if ( required ) {
@@ -136,13 +136,10 @@
                             }
                             break;
                         case 'upload':
-                            if(!valid_extension_file( formulario, value)) {
+                            if(!valid_extension_file( formulario, value ) ){
                                 r.message = validation_messages.upload;
                             }
                             break;
-                        case 'free':
-                            r.message = '';
-                        break;
                         default:
                             r.message = validations_regexp.not_config;
                             break;

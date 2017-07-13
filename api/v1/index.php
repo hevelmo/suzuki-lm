@@ -63,6 +63,9 @@ $app = new \Slim\App($container);
     $app->post("/send/testdrive", "SendTestDrive:__invoke");
     $app->post("/send/newsletter/testdrive", "SendTestDriveNews:__invoke");
 
+    // BOLSA DE TRABAJO
+    $app->post("/send/bolsa-de-trabajo", "SendJobBoard:__invoke");
+
     $app->run();
 /**
  * CONSULT MASTER
@@ -359,10 +362,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "-lm";
             $url  = "http://suzuki". $domain .".com.mx/";
-            $mail_to = "hevelmo060683@gmail.com";
             /*
-            $mail_to = "mercadotecnia@suzuki-lm.com.mx";
+            $mail_to = "hevelmo060683@gmail.com";
             */
+            $mail_to = "mercadotecnia@suzuki-lm.com.mx";
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -408,10 +411,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "-lm";
             $url  = "http://suzuki". $domain .".com.mx/";
-            $mail_to = "hevelmo060683@gmail.com";
             /*
-            $mail_to = "webmaster@medigraf.com.mx";
+            $mail_to = "hevelmo060683@gmail.com";
             */
+            $mail_to = "webmaster@medigraf.com.mx";
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -457,10 +460,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "-lm";
             $url  = "http://suzuki". $domain .".com.mx/";
-            $mail_to = "hevelmo060683@gmail.com";
             /*
-            $mail_to = "mercadotecnia@suzuki-lm.com.mx";
+            $mail_to = "hevelmo060683@gmail.com";
             */
+            $mail_to = "mercadotecnia@suzuki-lm.com.mx";
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -478,13 +481,6 @@ $app = new \Slim\App($container);
                         "name" => $property->agencia,
                         "type" => "to"
                     )
-                    /*
-                    array(
-                        "email" => $mail_to,
-                        "name" => $property->agencia,
-                        "type" => "to"
-                    )
-                    */
                 ),
                 "headers" => array(
                     "Reply-To" => $mail_to
@@ -513,10 +509,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "-lm";
             $url  = "http://suzuki". $domain .".com.mx/";
-            $mail_to = "hevelmo060683@gmail.com";
             /*
-            $mail_to = "webmaster@medigraf.com.mx";
+            $mail_to = "hevelmo060683@gmail.com";
             */
+            $mail_to = "webmaster@medigraf.com.mx";
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -534,13 +530,6 @@ $app = new \Slim\App($container);
                         "name" => $property->agencia,
                         "type" => "to"
                     )
-                    /*
-                    array(
-                        "email" => $mail_to,
-                        "name" => $property->agencia,
-                        "type" => "to"
-                    )
-                    */
                 ),
                 "headers" => array(
                     "Reply-To" => $mail_to
@@ -569,10 +558,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "-lm";
             $url  = "http://suzuki". $domain .".com.mx/";
-            $mail_to = "hevelmo060683@gmail.com";
             /*
-            $mail_to = "mercadotecnia@suzuki-lm.com.mx";
+            $mail_to = "hevelmo060683@gmail.com";
             */
+            $mail_to = "mercadotecnia@suzuki-lm.com.mx";
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -590,18 +579,6 @@ $app = new \Slim\App($container);
                         "name" => $property->agencia,
                         "type" => "to"
                     )
-                    /*
-                    array(
-                        "email" => $mail_to,
-                        "name" => $property->agencia,
-                        "type" => "to"
-                    ),
-                    array(
-                        "email" => $mail_cc,
-                        "name" => $property->agencia,
-                        "type" => "cc"
-                    )
-                    */
                 ),
                 "headers" => array(
                     "Reply-To" => $mail_to
@@ -630,10 +607,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "-lm";
             $url  = "http://suzuki". $domain .".com.mx/";
-            $mail_to = "hevelmo060683@gmail.com";
             /*
-            $mail_to = "webmaster@medigraf.com.mx";
+            $mail_to = "hevelmo060683@gmail.com";
             */
+            $mail_to = "webmaster@medigraf.com.mx";
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -651,18 +628,6 @@ $app = new \Slim\App($container);
                         "name" => $property->agencia,
                         "type" => "to"
                     )
-                    /*
-                    array(
-                        "email" => $mail_to,
-                        "name" => $property->agencia,
-                        "type" => "to"
-                    ),
-                    array(
-                        "email" => $mail_cc,
-                        "name" => $property->agencia,
-                        "type" => "cc"
-                    )
-                    */
                 ),
                 "headers" => array(
                     "Reply-To" => $mail_to
@@ -681,5 +646,86 @@ $app = new \Slim\App($container);
                 )
             ));
             echo changeArrayIntoJSON("sukpa", array("process" => "ok"));
+        }
+    }
+    // SEND BOLSA DE TRABAJO
+    class SendJobBoard extends SendMaster {
+        /**
+         * Description
+         */
+        function __construct() {
+            parent::__construct(array(), array(), "contact_bolsa.twig");
+        }
+
+        /**
+         * Description
+         * @param type $request 
+         * @param type $response 
+         * @param type $args 
+         */
+        public function startProcess($request, $response, $args) {
+            $domain = "gdl";
+            $url  = "http://suzuki". $domain .".com.mx/";
+            /*
+            $mail_to = "hevelmo060683@gmail.com";
+            */
+            $mail_to = "reclutamiento@camcar.mx";
+            $from_email = "noreply@clicktolead.com.mx";
+            $website = $url;
+
+            parent::getRouter()->setRouteParams($request, $response, $args);
+            $property = parent::getRouter()->getProperty();
+
+            $from_email = "noreply@clicktolead.com.mx";
+            $website = $url;
+            $mailReplay = $property->correo;
+            //SEND
+            parent::getTemplate()->addToMasterConfigArray((array) $property);
+            return parent::getSender()->__send(array(
+                "html" => parent::getTemplate()->render(),
+                "subject" => $property->producto,
+                "from_email" => $from_email,
+                "from_name" => $property->nombre . " " . $property->apellidos,
+                "to" => array(
+                    array(
+                        "email" => $mail_to,
+                        "name" => $property->agencia,
+                        "type" => "to"
+                    )
+                ),
+                "attachments" => array(
+                    array(
+                        "type" => $property->mime,
+                        "name" => $property->nombre_archivo,
+                        "content" => $property->file_content
+                    )
+                ),
+                "headers" => array(
+                    "Reply-To" => $mail_to
+                ),
+                "tags" => array(
+                    "orden-new-notificacion",
+                    "suzuki-guadalajara",
+                    "suzuki-bolsa-de-trabajo"
+                ),
+                "google_analytics_domains" => array(
+                    $website
+                ),
+                "google_analytics_campaign" => $mail_to,
+                "metadata" => array(
+                    "website" => $website
+                )
+            ));
+        }
+
+        /**
+         * Description
+         * @param type $request 
+         * @param type $response 
+         * @param type $args 
+         */
+        public function __invoke($request, $response, $args) {
+            $result = $this->startProcess($request, $response, $args);
+            echo changeArrayIntoJSON("sukpa", $result);
         }
     }
